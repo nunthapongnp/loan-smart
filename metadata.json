@@ -1,0 +1,7 @@
+{
+  "name": "LoanSmart - คำนวณผ่อนบ้าน รถ & รีไฟแนนซ์",
+  "description": "เครื่องมือคำนวณค่างวดผ่อนบ้านและรถยนต์ วิเคราะห์ดอกเบี้ย ตารางผ่อนชำระ เปรียบเทียบรีไฟแนนซ์ จำลองการโปะหนี้ และกราฟแสดงความคุ้มค่าแบบเรียลไทม์",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
