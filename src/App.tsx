@@ -9,9 +9,6 @@ import {
   Car,
   RefreshCw,
   Sparkles,
-  Plus,
-  Mic,
-  AudioWaveform,
   HelpCircle,
   Share2,
   Menu,
@@ -104,44 +101,6 @@ export default function App() {
         {activeTab === 'car' && <CarLoanCalculator />}
         {activeTab === 'refinance' && <RefinanceCalculator />}
       </main>
-
-      {/* Floating Bottom Bar (Matching exact layout from IMG_6439.png) */}
-      <div className="fixed bottom-4 left-0 right-0 z-40 px-4 pointer-events-none">
-        <div className="max-w-md mx-auto pointer-events-auto">
-          <div
-            onClick={() => handleOpenGemini()}
-            className="w-full bg-white/95 backdrop-blur-md rounded-full px-4 py-2.5 shadow-xl border border-slate-200/90 flex items-center justify-between cursor-pointer hover:bg-white hover:border-slate-300 transition-all group"
-          >
-            {/* Left: Plus icon in circular badge */}
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-colors">
-                <Plus className="w-4 h-4" />
-              </div>
-              <span className="text-sm font-medium text-slate-500 group-hover:text-slate-700 transition-colors select-none">
-                Ask Gemini
-              </span>
-            </div>
-
-            {/* Right: Microphone and Audio Waveform icons matching screenshot */}
-            <div className="flex items-center gap-2 text-slate-700">
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleOpenGemini('แนะนำวิธีคำนวณการผ่อนที่ประหยัดที่สุดให้หน่อย');
-                }}
-                className="w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center transition-colors"
-                title="ถามด้วยเสียง"
-              >
-                <Mic className="w-4 h-4" />
-              </button>
-              <div className="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">
-                <AudioWaveform className="w-4 h-4" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Info Modal */}
       {showInfoModal && (
